@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-[#42d1f5];
+    cursor: crosshair;
+  }
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.5; filter: blur(2px); }
+  50% { opacity: 1; filter: blur(4px); }
+}
+
+.glow-text {
+  animation: glow 2s infinite ease-in-out;
+}
+
+/* Custom scrollbar for that tech feel */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(66, 209, 245, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(66, 209, 245, 0.2);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(66, 209, 245, 0.4);
+}

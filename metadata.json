@@ -1,0 +1,6 @@
+{
+  "name": "J.A.R.V.Y.S. AI Assistant",
+  "description": "A web-based intelligent assistant inspired by Stark Industries, powered by Gemini AI with voice recognition and text-to-speech.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
